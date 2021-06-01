@@ -1,0 +1,7 @@
+<div>
+  <input type="text" name="search" id="search"  #serachInput (change)="onInputChange($event)"/>
+  <button type="text" (click)="onSearch()">Search</button>
+ <ul>
+    <li *ngFor="let search of (searchResults | async)">{{search}}</li>
+  </ul>
+</div>
